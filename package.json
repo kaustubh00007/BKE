@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "AI-Powered Backend with Strapi",
-  "scripts": {
-    "build": "strapi build",
-    "develop": "strapi develop",
-    "start": "strapi start",
+   "scripts": {
+    "build": "mkdir -p public/uploads && mkdir -p .tmp && strapi build",
+    "develop": "mkdir -p public/uploads && mkdir -p .tmp && strapi develop", 
+    "start": "mkdir -p public/uploads && mkdir -p .tmp && strapi start",
     "strapi": "strapi"
   },
   "dependencies": {
